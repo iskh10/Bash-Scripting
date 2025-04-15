@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Clone Buildroot repository
+git clone git://git.buildroot.net/buildroot
+cd buildroot
+
+# Set up the configuration for Raspberry Pi
+make raspberrypi_defconfig
+
+# Run the configuration menu to modify settings if necessary (optional)
+make menuconfig
+
+# Build the image
+make
+
+# Output images will be in the 'output/images' directory
+echo "Build complete! Images are available in output/images/"
