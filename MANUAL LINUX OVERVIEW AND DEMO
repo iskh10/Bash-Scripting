@@ -1,0 +1,7 @@
+#include <unistd.h>
+
+int main() {
+    const char *msg = "Hello from system call write()\n";
+    write(1, msg, 33);  // 1 is the file descriptor for STDOUT
+    return 0;
+}
