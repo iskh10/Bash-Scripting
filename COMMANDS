@@ -1,0 +1,8 @@
+Command | Description
+pwd | Print working directory (shows your current location)
+ls | List files in the current directory
+ls -l | List files with details (permissions, size, etc.)
+ls -a | List all files, including hidden ones
+cd | Change directory
+cd .. | Go up one directory
+cd ~ | Go to home directory
